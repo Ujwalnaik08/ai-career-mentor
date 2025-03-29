@@ -172,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Add these to .gitignore
+.env
+venv/
+__pycache__/
+node_modules/
+*.log
+data/  # If you don’t want to commit scraped data
