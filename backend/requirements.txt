@@ -1,0 +1,33 @@
+# backend/requirements.txt
+
+# Core & API
+Flask==3.0.3
+flask-cors==4.0.1          # Enable CORS for frontend-backend communication
+python-dotenv==1.0.1
+
+# Resume Parsing
+PyPDF2==3.0.1
+python-docx==0.8.11
+pdfplumber==0.10.4          # Better PDF parsing (supplements PyPDF2)
+spacy==3.8.0
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl
+
+# Web Scraping
+beautifulsoup4==4.12.3
+requests==2.32.3
+scrapy==2.12.0
+fake-useragent      # Avoid bot detection during scraping
+
+# NLP & Machine Learning
+joblib==1.4.0               # Save/load trained models (future-proofing)
+scikit-learn==1.4.2         # For custom NER model training (e.g., skill detection)
+
+# Data & Caching
+redis==5.0.3
+pandas==2.2.2
+
+# Utilities
+python-magic==0.4.27
+tqdm==4.66.4
+filetype==1.2.0             # Validate uploaded files (e.g., PDF/DOCX check)
+pdfminer.six
